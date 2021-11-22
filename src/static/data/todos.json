@@ -1,0 +1,36 @@
+[
+  {
+    "title": "Finish JavaScript Project",
+    "category": "school",
+    "description": "Need to finish this project",
+    "isComplete": true
+  },
+
+  {
+    "title": "Update Computer",
+    "category": "tech",
+    "description": "Need to update my computer",
+    "isComplete": false
+  },
+
+  {
+    "title": "Make Resume",
+    "category": "career",
+    "description": "Need to make a resume",
+    "isComplete": false
+  },
+
+  {
+    "title": "Buy Laptop",
+    "category": "shopping",
+    "description": "Need to buy a laptop",
+    "isComplete": true
+  },
+
+  {
+    "title": "Listen to music",
+    "category": "entertainment",
+    "description": "I want to listen to music",
+    "isComplete": true
+  }
+]

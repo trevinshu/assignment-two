@@ -1,0 +1,400 @@
+@use 'reboot';
+body {
+  font-family: 'Fira Sans', sans-serif;
+  background-color: #031927;
+  color: #f1f2ee;
+
+  .homeDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    .appLogo {
+      width: 50%;
+    }
+
+    .heading {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .tagline {
+      font-weight: 300;
+      font-size: 1.5rem;
+    }
+
+    .homeBtn {
+      background-color: #9dd1f1;
+      color: #031927;
+      padding: 1rem 2rem;
+      font-weight: 700;
+      font-size: 1.5rem;
+      text-align: center;
+      letter-spacing: 5px;
+      border-radius: 10px;
+      margin-top: 1rem;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+
+  .todoDiv {
+    .todoHeader {
+      display: flex;
+      align-items: center;
+      margin: 1rem;
+
+      .appLogo {
+        width: 30%;
+      }
+
+      .headerItems {
+        margin-left: 1rem;
+
+        .todoHeading {
+          font-size: 2rem;
+          font-weight: 700;
+          text-align: center;
+        }
+
+        .todoTagline {
+          font-weight: 300;
+          font-size: 1.3rem;
+          text-align: center;
+        }
+      }
+    }
+    #todos {
+      .itemUl {
+        background-color: #9dd1f1;
+        border-radius: 10px;
+        color: #031927;
+        margin: 1rem;
+        padding: 1rem;
+
+        .liHeading {
+          font-size: 2rem;
+          font-weight: 700;
+          text-align: center;
+          margin-bottom: 1rem;
+          text-transform: uppercase;
+        }
+
+        li {
+          font-size: 1.5rem;
+          font-weight: 300;
+          text-transform: uppercase;
+        }
+
+        .btnContainer {
+          margin: 2rem 0;
+
+          .editBtn {
+            background-color: blue;
+            color: #f1f2ee;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            margin-right: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-weight: 700;
+            cursor: pointer;
+          }
+
+          .removeBtn {
+            background-color: red;
+            color: #f1f2ee;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            margin-right: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-weight: 700;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .school {
+        border-left: 15px solid green;
+      }
+
+      .tech {
+        border-left: 15px solid hotpink;
+      }
+
+      .career {
+        border-left: 15px solid gold;
+      }
+
+      .shopping {
+        border-left: 15px solid indigo;
+      }
+
+      .shopping {
+        border-left: 15px solid indigo;
+      }
+
+      .entertainment {
+        border-left: 15px solid orangered;
+      }
+    }
+
+    .addBtn {
+      border: none;
+      border-radius: 10px;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 1rem 2rem;
+      letter-spacing: 5px;
+      background-color: green;
+      cursor: pointer;
+      margin: 1rem;
+      color: #f1f2ee;
+      text-align: center;
+    }
+  }
+
+  .deleteDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    .appLogo {
+      width: 30%;
+    }
+
+    .deleteHeading {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    .itemUl {
+      background-color: #9dd1f1;
+      border-radius: 10px;
+      color: #031927;
+      margin: 1rem;
+      padding: 1rem;
+
+      .liHeading {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+      }
+
+      li {
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+    }
+
+    .cancelBtn,
+    .deleteBtn {
+      border: none;
+      border-radius: 10px;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 1rem 2rem;
+      letter-spacing: 5px;
+      cursor: pointer;
+      margin: 1rem;
+      color: #f1f2ee;
+      text-align: center;
+    }
+
+    .cancelBtn {
+      background-color: blue;
+    }
+
+    .deleteBtn {
+      background-color: red;
+    }
+  }
+
+  .editDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+    .appLogo {
+      width: 30%;
+    }
+
+    .editHeading {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin: 1rem 0;
+    }
+
+    .formContainer {
+      input {
+        margin: 0.5rem;
+        border-radius: 10px;
+        border: none;
+        padding: 1rem;
+      }
+
+      select {
+        margin: 0.5rem;
+        border-radius: 10px;
+        border: none;
+        padding: 0.5rem;
+      }
+    }
+
+    .buttonContainer {
+      .cancelBtn,
+      .editBtn {
+        border: none;
+        border-radius: 10px;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 1rem 2rem;
+        letter-spacing: 5px;
+        cursor: pointer;
+        margin: 1rem;
+        color: #f1f2ee;
+        text-align: center;
+      }
+
+      .cancelBtn {
+        background-color: blue;
+      }
+
+      .editBtn {
+        background-color: red;
+      }
+    }
+  }
+
+  .addDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+    .appLogo {
+      width: 30%;
+    }
+
+    .editHeading {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin: 1rem 0;
+    }
+
+    .formContainer {
+      input {
+        margin: 0.5rem;
+        border-radius: 10px;
+        border: none;
+        padding: 1rem;
+      }
+
+      select {
+        margin: 0.5rem;
+        border-radius: 10px;
+        border: none;
+        padding: 0.5rem;
+      }
+    }
+
+    .buttonContainer {
+      .cancelBtn,
+      .addBtn {
+        border: none;
+        border-radius: 10px;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 1rem 2rem;
+        letter-spacing: 5px;
+        cursor: pointer;
+        margin: 1rem;
+        color: #f1f2ee;
+        text-align: center;
+      }
+
+      .cancelBtn {
+        background-color: blue;
+      }
+
+      .addBtn {
+        background-color: red;
+      }
+    }
+  }
+
+  .errorDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .headerContainer {
+      display: flex;
+      align-items: center;
+      margin: 1rem;
+
+      .appLogo {
+        width: 30%;
+      }
+
+      .headerItems {
+        margin-left: 1rem;
+
+        .appHeading {
+          font-size: 2rem;
+          font-weight: 700;
+          text-align: center;
+        }
+
+        .appTagline {
+          font-weight: 300;
+          font-size: 1.3rem;
+          text-align: center;
+        }
+      }
+    }
+
+    .errorContainer {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2rem;
+      height: 50vh;
+
+      .errorHeading {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .errorTagline {
+        font-weight: 300;
+        font-size: 1.3rem;
+        text-align: center;
+      }
+
+      .backBtn {
+        background-color: #9dd1f1;
+        color: #031927;
+        padding: 1rem 2rem;
+        font-weight: 700;
+        font-size: 1.5rem;
+        text-align: center;
+        letter-spacing: 5px;
+        border-radius: 10px;
+        margin-top: 1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+  }
+}
