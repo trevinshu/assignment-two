@@ -21,6 +21,7 @@ This Non-Destructive CRUD Todo Application was coded in vanilla JavaScript.
 5. Copy & paste server link into your browser's address bar or click the server link to open it in your default browser.
 
 ## Bugs
-- Netlify displays a blank page when deployed. App works fine when run via vs code. 
+
+- No bugs.
 
 [View Live](https://assignmenttwotodoapp.netlify.app/)
